@@ -43,6 +43,7 @@
             display: flex;
             justify-content: center;
             img{
+                cursor: pointer;
                 width: 2em;
             }
             img:not(:first-child), img:not(:last-child){

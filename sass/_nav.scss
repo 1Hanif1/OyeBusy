@@ -110,3 +110,31 @@
     }
 
 }
+
+.mobile_nav{
+    font-size: 2vw;
+    position: fixed;
+    bottom: 0em;
+    display: flex;
+    background-color: white;
+    z-index: 2;
+    padding: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+        span{
+            margin-top: 0.5em;
+        }
+        &:hover{
+            color: #E8625D;
+            svg path{
+                    fill: #E8625D;
+            }
+        }
+    }
+}

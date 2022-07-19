@@ -232,6 +232,7 @@
         align-items: center;
     }
     .banner_text{
+        position: relative;
         width: 25em;
         padding: 2.4em;
         h2{
@@ -245,6 +246,11 @@
             color: #017F82;
             margin-bottom: 0.8em;
             font-weight: 600;
+        }
+        .warning{
+            color: red;
+            position: absolute;
+            display: none;
         }
         .input_field{
             background-color: white;

@@ -39,6 +39,7 @@
         .prev,.next{
             cursor: pointer;
             width: 2em;
+            z-index: 1;
             img{width: 100%;}
         }
         .container{
