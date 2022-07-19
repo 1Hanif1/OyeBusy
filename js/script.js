@@ -1,4 +1,5 @@
 'use strict';
+// premium services product slider
 const premiumServices = document.querySelectorAll('.premium');
 const premiumServiceHandler = (e) => {
     if (!e.target.classList.contains('prev--js') && !e.target.classList.contains('next--js')) return;
@@ -16,6 +17,7 @@ premiumServices.forEach(service => {
     service.addEventListener('click', premiumServiceHandler);
 })
 
+// phone number validation
 const numberSubmit = document.querySelector('.btn--js');
 const numberInput = document.querySelector('.number-input--js');
 const warningText = document.querySelector('.warning');
