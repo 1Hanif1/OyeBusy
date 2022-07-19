@@ -1,0 +1,142 @@
+.header{
+    max-width: 120rem;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    font-size: min(1vw, 1em);
+    &_left{
+        width: 100%;
+        background-image: url(../static/header_image.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 8em 8em;
+        &_text{
+            font-size: 2.2em;
+            text-align: center;
+            color: white;
+
+        }
+        .search{
+            width: 100%;
+            background-color: white;
+            border-radius: .3em;
+            margin-block: 3em 0.5em;
+            padding:  1em 0.8em;
+            img{
+                padding-right: 0.5em;
+                width: 1.7em;
+            }
+            input{
+                width: 100%;
+                border: none;
+                font-size: 1em;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .examples{
+            color: white;
+            font-size: 0.85em;
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+
+
+    &_right{
+        position: relative;
+        .discount{
+            width: 10em;
+            position: absolute;
+            right: 0em;
+            top: 2.5em;
+        }
+        &_text{
+            text-align: center;
+            font-weight: 600;
+            margin-block: 0.5em;
+            font-size: 1.5em;
+        }
+        flex: 1;
+        &_services{
+            margin-bottom: 1em;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            align-items: stretch;
+            justify-content: center;
+            gap: 2em 2.5em;
+            padding: 2rem 3em;
+            .service{
+                text-align: center;
+                cursor: pointer;
+                font-size: 0.9em;
+                transition: transform 200ms ease-in-out;
+                img{
+                    width: 3em;
+                    
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+                span{
+                    font-size: 1.2em;
+                    margin-top: 1.25em;
+                }
+            }
+        }
+        .banner_container{
+            position: relative;
+            padding-inline: 0.4em;
+            img{
+                width: 20em;
+                height: auto;
+                margin-inline: 0.3em;
+                cursor: pointer;
+                transition: transform 200ms ease-in-out;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+    
+    @include mobile{
+        display: block;
+        font-size: 3vw;
+        &_left{
+            display: none;
+        }
+        &_right{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0em;
+            &_services{
+                margin-top: 1em;
+                align-items: stretch;
+                justify-content: center;
+                padding: 0em;
+                gap: 0em;
+                .service{
+                    &:hover{
+                        transform: none;
+                    }
+                    padding: 1em;
+                    border: 1px solid #F2F2F2;
+                }
+            }
+            &_mobile_title{
+                padding: 0.5em;
+                color: #025B5D;
+            }
+        }
+    }
+}

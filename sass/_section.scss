@@ -1,0 +1,286 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: min(1vw, 1em);
+    @include mobile{
+        font-size: 3vw;
+    }
+    margin-top: 3em;
+    &_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.7em;
+        margin-bottom: 1em;
+        color: #025B5D;
+        span{
+            color: black;
+            margin-top: 0.5em;
+            font-weight: 400;
+            font-size: 0.6em;
+        }
+    }
+    .service_container{
+        display: grid;
+        margin-block: 4em;
+
+        .service_item{
+            cursor: pointer;
+        transition: transform 200ms ease-in-out;
+        &:hover{
+            transform: translateY(-10%);
+         }   
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: 0em 0em 0.95em -0.4em rgba(0, 0, 0,0.5);
+            span{
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.section_one{
+    .service_container{
+        max-width: 84.3781em;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: stretch;
+        gap: 0em 2.4em;
+        @include mobile{
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+            justify-content: center;
+            gap: 4.5em 2em;
+        }
+    }
+    .service_item{
+        
+        width: 14em;
+        height: 9em;
+        border-radius: 1em;
+        padding: 1em;
+        img{
+            position: absolute;
+            top: 0px;
+            width: 10em;
+        }
+
+        @include mobile{
+            font-size: 1em;
+        }
+        &:nth-child(1){
+            img{
+                top: -2.75em;
+            }
+        }
+        &:nth-child(2){
+            img{
+                top: -1.5625em;
+            }
+        }
+        &:nth-child(3){
+            img{
+                top: -2.25em;
+            }
+        }
+        &:nth-child(4){
+            img{
+                top: -2.25em;
+            }
+        }
+        &:nth-child(5){
+            img{
+                top: -2.75em;
+            }
+        }
+    }
+}
+
+.section_two{
+    font-size: min(1.4vw, 1.3em);
+    .section_title{
+        margin-bottom: 3em;
+        font-size: 1.3em;
+    }
+    .service_container{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0em 3em;
+    }
+    .service_item{
+        width: 10em;
+        height: 10em;
+        border-radius: 1em;
+        padding: 1em;
+        transition: transform 200ms ease-in-out;
+        &:hover{
+            background: linear-gradient(60deg,#FFA500,#FFA500, #FFECCA);
+            color: white;
+        }
+        img{
+            position: absolute;
+            width: 7em;
+            top: -6em;
+        }
+        span{
+            font-size: 1em;
+        }
+        &:nth-child(1){
+            img{
+                width: 9em;
+                top: -5em;
+            }
+        }
+        &:nth-child(5), &:nth-child(6){
+            img{
+                width: 8em;
+                top: -5em;
+            }
+        }
+    }
+    @include mobile{
+        font-size: 2.5vw;
+        .section_title{
+            margin-bottom: 3em;
+            font-size: 2em;
+        }
+        .service_container{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 9em 3em;
+        }
+    }
+}
+
+.section_three{
+    margin-top: 0em;
+    .section_title{
+        margin-top: 1em;
+    }
+    .service_container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0em 2em;
+        margin-top: 1em;
+        .service{
+            cursor: pointer;
+            &_image{
+                border-radius: 1em;
+                width: 17.375em;
+                height: 9.75em;
+                background-color: #531C1C;
+            }
+            transition: transform 200ms ease-in-out;
+            &:hover{
+                transform: translateY(-10%);
+             }  
+            &_text{
+                font-size: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1em;
+                font-weight: 600;
+                span{
+                    font-weight: 400;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        @include mobile{
+            font-size: 3.5vw;
+            width: 100%;
+            overflow-x: scroll;
+            padding: 1em;
+        }
+    }
+}
+
+.section_four{
+    .service_container{
+        // max-width: 84.3781rem;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: stretch;
+        gap: 0em 4em;
+        @include mobile{
+            grid-template-columns: repeat(3, 1fr);
+            width: 95%;
+            justify-content: center;
+            gap: 4.5em 2em;
+        }
+    }
+    .service_item{
+        
+        width: 9em;
+        height: 8em;
+        border-radius: 1em;
+        padding: 1em;
+        img{
+            position: absolute;
+            top: -3em;
+            width: 6em;
+        }
+
+        @include mobile{
+            font-size: 1em;
+        }
+
+    }
+}
+
+.testimonial{
+    font-size: min(1vw,1em);
+    padding: 3em 0em;
+
+    &_title{
+        color: #025B5D;
+        font-size: 2em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    &_container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 84.3781rem;
+        width: 90%;
+        gap: 2em;
+        font-weight: 600;
+        line-height: 1.5;
+        .card{
+            box-shadow: 0em 1em 4em -2em rgba(0, 0, 0,0.4);
+            padding: 2em;
+            font-size: 0.8em;
+            transition: transform 200ms ease-in-out;
+            &:hover{
+                transform: translateY(-10%);
+            }
+        }
+        .test{
+            margin-block: 1em 2em;
+            font-size: 1em;
+        }
+        .name{
+            color: #025B5D;
+        }
+        img{
+            width: 1em;
+        }
+    }
+    @include mobile{
+        font-size: 3vw;
+        &_container{
+            overflow-x: scroll;
+            padding-block: 2em;
+            .card{
+                width: 24em;
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+}

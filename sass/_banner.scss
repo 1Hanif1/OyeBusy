@@ -1,0 +1,326 @@
+.banner_one{
+    font-size: min(1vw,1em);
+    width: 50em;
+    border-radius: 1em;
+    margin: 0 auto;
+    box-shadow: 0em 0.3em 0.3em -0.1em rgba(0, 0, 0,0.5);
+    background: url(../static/red_shirt_man.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-color: #ECECEE;
+    padding: 2em;
+    margin-bottom: 3em;
+    &_title{
+        color: #025B5D;
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    &_text{
+        display: flex;
+        li{
+            list-style: disc;
+            margin-bottom: 0.7em;
+        }
+        & > * {
+            margin-right: 3em;
+            margin-left: 1em;
+        }
+    }
+    @include mobile{
+        font-size: 1.8vw;
+    }
+}
+.banner_two{
+    display: flex;
+    flex-direction: column;
+    font-size: min(1vw, 1em);
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 3em 0em;
+    &_title{
+        font-weight: 700;
+        font-size: 2.3em;
+        margin-bottom: 1.3em;
+        color: #025B5D;
+    }
+    .banner_items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner_item{
+        align-items: center;
+        font-size: 1.2em;
+        img{
+            width: 4em;
+            height: auto;
+            margin-right: 0.5em;
+        }
+        span{
+            display: block;
+            font-size: 0.7em;
+            font-weight: 400;
+        }
+        &:nth-child(2){
+            margin-inline: 4em;
+        }
+    }
+    @include mobile{
+        display: block;
+        font-size: 2vw;
+        padding: 3em 2em;
+        &_title{
+            text-align: center;
+            font-size: 3em;
+        }
+        .banner_items{
+           font-size: 1.4em;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: center;
+           margin-inline: 0em;
+           .banner_item{
+               &:nth-child(2){
+                   margin: 1.4em 0em;
+               }
+           }
+        }
+    }
+}
+
+.banner_three{
+    font-size: min(1vw,1em);
+    background: linear-gradient(180deg, #FBD268,#F1BA29);
+    .banner_container{
+        margin: 0 auto;
+        max-width: 75em;
+        padding: 3em;
+        background-image: url(../static/yellow_hole_paper.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .banner_text{
+        margin-left: auto;
+        width: 70%;
+        text-align: center;
+    }
+    .banner_title{
+        letter-spacing: 0.2em;
+        font-size: 2em;
+    }
+    .banner_para{
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-block: 0.5em 1.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile{
+            font-size: 2em;
+        }
+        .banner_lines{
+            width: 4em;
+            height: 0.08em;
+            background-color: black;
+            margin-inline: 0.7em;
+        }
+    }
+
+    .banner_cta{
+        color: #A90000;
+        padding: 0.5em 1.3em;
+        border: 0.1em solid #A90000;
+        font-weight: 600;
+        width: fit-content;
+        margin: 0 auto;
+        border-radius: 10em;
+        cursor: pointer;
+        transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+        &:hover{
+            background-color: #A90000;
+            color: white;
+        }
+        @include mobile{
+            font-size: 1.7em;
+        }
+    }
+
+    @include mobile{
+        font-size: 2vw;
+    }
+}
+
+.banner_four{
+    font-size: min(1vw,1em);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 108.6875em;
+    height: 22em;
+    display: flex;
+    background-color: #E5E4E9;
+    margin-top: 5em;
+    .banner_container{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .banner_text{
+        background-color: white;
+        width: 21em;
+        padding: 2.4em;
+        h2{
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #017F82;
+            margin-bottom: 1em;
+        }
+        li{
+            font-size: 1em;
+            list-style: disc;
+            margin-left: 2em;
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+.banner_four_mobile{
+    font-size: 2vw;
+    padding: 3em;
+    background: url(../static/WhyUs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    .banner_text{
+        font-size: 1.5em;
+        width: 70%;
+    }
+    .banner_title{
+        text-align: center;
+        color: #E8625D;
+        margin-bottom: 1em;
+    }
+    img{
+        width: 1.6em;
+        margin-right: 1em;
+    }
+    li{
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        color: #025B5D;
+    }
+}
+
+.banner_five{
+    font-size: min(1vw,1em);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 108.6875em;
+    padding: 3em 15em;
+    display: flex;
+    background: url(../static/mobile_back.png);
+    background-color: #F6F6F6;
+    background-position: center bottom -5em;
+    background-repeat: no-repeat;
+    background-size: 130em;
+    .banner_container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .banner_text{
+        width: 25em;
+        padding: 2.4em;
+        h2{
+            font-size: 1.9em;
+            font-weight: 600;
+            color: #017F82;
+            margin-bottom: 0.7em;
+        }
+        p{
+            font-size: 1.1em;
+            color: #017F82;
+            margin-bottom: 0.8em;
+            font-weight: 600;
+        }
+        .input_field{
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0.4em;
+            border-radius: 0.3em;
+            overflow: hidden;
+            box-shadow: 0em 0.2em 0.3em -0.1em rgba(0, 0, 0,0.5);
+            input{
+                width: 100%;
+                height: 3.4em;
+                padding: 0em 1em;
+                font-size: 0.9em;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .button{
+                cursor: pointer;
+                width: 20%;
+                background-color: rgb(242, 193, 157,0.5);
+                display: flex;
+                border: none;
+                border-radius: 0.3em;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width: 50%;
+            }
+        }
+        .downloads{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 2em;
+            img{
+                
+                &:nth-child(1){width: 7.4em; margin-right: 1em;}
+                &:nth-child(2){width: 7em;}
+            }
+        }
+    }
+}
+
+.banner_six{
+    font-size: min(1vw,1em);
+    max-width: 66em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3em 8em;
+    img{
+        width: 100%;
+        
+    }
+    figure{
+        width: 30%;
+    }
+    h2{
+        font-size: 2em;
+        width: 50%;
+        text-align: center;
+    }
+    @include mobile{
+        padding: 3em 7em;
+        font-size: 2vw;
+        h2{
+            width: 60%;
+        }
+        figure{
+            width: 30%;
+        }
+    }
+}

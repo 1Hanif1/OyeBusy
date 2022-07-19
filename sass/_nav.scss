@@ -1,0 +1,112 @@
+.nav{
+    .container-type-one{
+        @include mobile{
+            display: block;
+        }
+    }
+    background-color: #F6F6F6;
+    font-size: min(1vw, 1rem);
+    padding: .9375em 3.75em;
+    @include mobile {
+        padding: .625rem 1.25rem;
+        font-size: 2.6vw;       
+       }
+    &_one{
+        margin-right: 2em;
+        @include mobile {
+            margin: 0 auto;
+            margin-bottom: 1em;
+        }
+    }
+    .logo{
+        margin-right: 3.4375em;
+        height: auto;
+        width: 5em;
+        cursor: pointer;
+
+    }
+    .search{
+        width: 100%;
+        border: 0.1em solid #415859;
+        padding: 0.5em 1em;
+        border-radius: 0.4em;
+        input{
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+            &:focus{
+                outline: none;
+            }
+            margin-left: 0.5em;
+        }
+        img{
+            width: 1.2em;
+        }
+    }
+    
+    .address{
+
+        img{
+            width: 0.9em;
+        }
+        span{
+            margin-inline: 0.5em;
+        }
+
+    }
+
+    &_links{
+        li{
+            margin-right: 4em;
+            cursor: pointer;
+            transition: color 200ms ease-in-out;
+            &:hover{
+                color: orange;
+            }
+            img{
+                width: 0.9em;
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .cart{
+        cursor: pointer;
+        svg{width: 100%; height: auto;}
+        margin-right: 3.125em;
+        width: 1.5em;
+        &:hover svg path {
+            fill: orange
+        }
+    }
+
+    .download_btn{
+        cursor: pointer;
+        border: 0.15em solid #415859;
+        color: #415859;
+        padding: 0.4em 1.3em;
+        border-radius: 4px;
+        transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
+        
+        &:hover{
+            border-color: orange;
+            color: orange;
+            .playstore svg path {
+                fill: orange
+            }
+        }
+        path{
+            transition: fill 200ms ease-in-out
+        }
+        .playstore{
+            width: 1.2em;
+            margin-right: 1em;
+            svg{
+                width: 100%;
+                height: auto;
+                
+            }
+        }
+    }
+
+}

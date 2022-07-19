@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+    &-ai-c{
+        align-items: center;
+    }
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-fd-c{
+        flex-direction: column;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+}
+
+.container-type-one{
+    max-width: 111.6875rem;
+    margin: 0 auto;
+}
+
+.hide-desktop{
+    @include desktop{
+        display: none !important;
+    }
+}
+
+.hide-mobile{
+    @include mobile{
+        display: none !important;
+    }
+}

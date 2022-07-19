@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Oyebusy - book your service</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container-type-one flex flex-ai-c flex-jc-sb">
+            <div class="nav_one flex flex-ai-c">
+
+                <img class="logo hide-mobile" src="./static/logo.png" alt="Oye busy">
+
+                <div class="address flex flex-ai-c">
+                    <img src="./static/location_icon.png" alt="/">
+                    <span>1st Floor, H 356, Block B, Sector 22, Noida, Uttar Pradesh 201301</span>
+                    <img src="./static/down_arrow.png" alt="/">
+                </div>
+            </div>
+            <div class="search flex flex-ai-c hide-desktop">
+                <img src="./static/search_icon.svg" alt="/">
+                <input type="text" placeholder="Search for a service">
+            </div>
+            <div class="nav_two flex flex-ai-c hide-mobile">
+                <ul class="nav_links flex flex-ai-c">
+                    <li>Blog</li>
+                    <li>Career</li>
+                    <li class="flex flex-ai-c flex-jc-sb">My Account <img src="./static/arrow_down_two.svg" alt="/">
+                    </li>
+                </ul>
+                <figure class="cart">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.75 22.5C7.375 22.5 6.2625 23.625 6.2625 25C6.2625 26.375 7.375 27.5 8.75 27.5C10.125 27.5 11.25 26.375 11.25 25C11.25 23.625 10.125 22.5 8.75 22.5ZM1.25 2.5V5H3.75L8.25 14.4875L6.5625 17.55C6.3625 17.9 6.25 18.3125 6.25 18.75C6.25 20.125 7.375 21.25 8.75 21.25H23.75V18.75H9.275C9.1 18.75 8.9625 18.6125 8.9625 18.4375L9 18.2875L10.125 16.25H19.4375C20.375 16.25 21.2 15.7375 21.625 14.9625L26.1 6.85C26.2 6.675 26.25 6.4625 26.25 6.25C26.25 5.5625 25.6875 5 25 5H6.5125L5.3375 2.5H1.25ZM21.25 22.5C19.875 22.5 18.7625 23.625 18.7625 25C18.7625 26.375 19.875 27.5 21.25 27.5C22.625 27.5 23.75 26.375 23.75 25C23.75 23.625 22.625 22.5 21.25 22.5Z"
+                            fill="#415859" />
+                    </svg>
+                </figure>
+                <div class="download_btn flex flex-ai-c">
+                    <figure class="playstore">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3402_2934)">
+                                <path
+                                    d="M1.48266 0.773438C1.24538 1.08701 1.11328 1.47274 1.11328 1.88553V18.2242C1.11328 18.6076 1.22764 18.9678 1.43419 19.2687L10.3242 9.99586L1.48266 0.773438Z"
+                                    fill="#415859" />
+                                <path
+                                    d="M11.1383 9.14644L14.0224 6.13824L3.88463 0.285291C3.44462 0.0311932 2.93979 -0.0290441 2.46875 0.103356L11.1383 9.14644Z"
+                                    fill="#415859" />
+                                <path
+                                    d="M11.14 10.8438L2.38281 19.9781C2.57163 20.0416 2.76702 20.0735 2.96256 20.0735C3.2798 20.0735 3.59719 19.99 3.8863 19.8231L14.097 13.9279L11.14 10.8438Z"
+                                    fill="#415859" />
+                                <path
+                                    d="M18.0349 8.4554L15.0711 6.74414L11.9531 9.99619L15.1439 13.3245L18.0349 11.6553C18.6135 11.3214 18.9588 10.7232 18.9588 10.0554C18.9588 9.38739 18.6135 8.7893 18.0349 8.4554Z"
+                                    fill="#415859" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3402_2934">
+                                    <rect width="20" height="20.0391" fill="white" transform="translate(0 0.0351562)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </figure>
+                    Download App
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header_left flex flex-fd-c flex-ai-c">
+
+            <h2 class="header_left_text">Home Services,<br>on demand</h2>
+            <div class="search flex flex-ai-c">
+                <img src="./static/search_icon.svg" alt="/">
+                <input type="text" placeholder="Search for a service">
+            </div>
+            <p class="examples">Examples: Salon, Women's hair, Men's grooming & Many more..</p>
+
+        </div>
+        <div class="header_right">
+            <img class="discount hide-mobile" src="./static/discount.png" alt="">
+            <h2 class="hide-mobile header_right_text">What are you looking for?</h2>
+            <div class="header_right_services">
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7075.png" alt="/">
+                    <span>Salon At Home</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7076.png" alt="">
+                    <span>Electrician</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7077.png" alt="">
+                    <span>Plumber</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7078.png" alt="">
+                    <span>CCTV</span>
+                </div>
+                <div class="hide-desktop service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7086.png" alt="">
+                    <span>Carpenter</span>
+                </div>
+                <div class="hide-mobile service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7082.png" alt="">
+                    <span>AC Service</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7081.png" alt="">
+                    <span>Packers & Movers</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7080.png" alt="">
+                    <span>Cleaning</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7079.png" alt="">
+                    <span>House Painting</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7083.png" alt="">
+                    <span>Home Appliances</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7084.png" alt="">
+                    <span>Disinfection</span>
+                </div>
+                <div class="service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7085.png" alt="">
+                    <span>Pest Control</span>
+                </div>
+                <div class="hide-mobile service flex flex-jc-sb flex-fd-c flex-ai-c">
+                    <img src="./static/Group 7086.png" alt="">
+                    <span>Carpenter</span>
+                </div>
+            </div>
+            <div class="banner_container flex">
+
+                <img src="./static/banner_three.png" alt="">
+
+
+                <img src="./static/banner_one.png" alt="">
+
+
+                <img src="./static/banner_two.png" alt="">
+
+            </div>
+            <h2 class="header_right_mobile_title hide-desktop">Top Offers</h2>
+        </div>
+    </header>
+
+    <section class="section section_top section_one">
+        <h2 class="section_title">Trending Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service_item">
+                <img src="./static/aircon_service.png" alt="">
+                <span>Air-conditioner Services</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/ac_install.png" alt="">
+                <span>AC installation</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/sofa_clean.png" alt="">
+                <span>Sofa cleaning Service</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/home_deep.png" alt="">
+                <span>Home Deep Cleaning Service</span>
+            </div>
+            <div class="service_item hide-mobile">
+                <img src="./static/aircon_service.png" alt="">
+                <span>Air-conditioner Services</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_top section_two">
+        <h2 class="section_title">Same Day Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service_item">
+                <img src="./static/carpenter.png" alt="">
+                <span>Carpentery Services</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/plumber.png" alt="">
+                <span>Plumbing Services</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/electrician.png" alt="">
+                <span>Electrical Services</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/painter.png" alt="">
+                <span>Painting Services</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/pest_control.png" alt="">
+                <span>Pest Control Services</span>
+            </div>
+            <div class="service_item hide-desktop">
+                <img src="./static/pest_control.png" alt="">
+                <span>Pest Control Services</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner_one">
+        <div class="banner_one_title"> 100% safe services</div>
+        <div class="banner_one_text">
+            <ul class="banner_one_list-one">
+                <li>Masks</li>
+                <li>Gloves</li>
+            </ul>
+            <ul class="banner_one_list_two">
+                <li>Temperature Checks</li>
+                <li>Sanitized tools</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section section_three">
+        <h2 class="section_title">Professional Cleaning Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_three">
+        <h2 class="section_title">Most Used Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner_two">
+        <h2 class="banner_two_title">Assured Peace of Mind</h2>
+        <div class="banner_items container-type-one ">
+            <div class="banner_item flex">
+                <img src="./static/high_quality_work.png" alt="" class="banner_image">
+                <h3 class="banner_text ">
+                    High Quality Work
+                    <span>Only authorized service experts and<br> genuine spare parts and equipments</span>
+                </h3>
+            </div>
+            <div class="banner_item flex">
+                <img src="./static/hassle_free.png" alt="" class="banner_image">
+                <h3 class="banner_text ">
+                    Hassle Free
+                    <span>Sit back and relax.<br> We do all the work</span>
+                </h3>
+            </div>
+            <div class="banner_item flex">
+                <img src="./static/totally_cashless.png" alt="" class="banner_image">
+                <h3 class="banner_text ">
+                    Totally Cashless
+                    <span>
+                        Pay online for Safe & Secure payment.<br>
+                        Many benefits and offers available with online payment
+                    </span>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section_three hide-mobile">
+        <h2 class="section_title">Trending Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+            <div class="service">
+                <div class="service_image">
+                </div>
+                <p class="service_text">
+                    Professional Deep Cleaning
+                    <span>For spring clean for end of lease clean</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_top section_four">
+        <h2 class="section_title">Trending Services <span>Premium Home Services</span></h2>
+        <div class="service_container">
+            <div class="service_item">
+                <img src="./static/washing_machine.png" alt="">
+                <span>Washing Machine repair</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/fridge.png" alt="">
+                <span>Refrigirator repair service</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/microwave.png" alt="">
+                <span>microwave repair</span>
+            </div>
+            <div class="service_item">
+                <img src="./static/filter.png" alt="">
+                <span>RO Service</span>
+            </div>
+            <div class="service_item ">
+                <img src="./static/tv.png" alt="">
+                <span>LED TV Repair</span>
+            </div>
+            <div class="service_item ">
+                <img src="./static/ac.png" alt="">
+                <span>AC Services</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner_three">
+        <div class="banner_container">
+            <div class="banner_text">
+                <h2 class="banner_title">TRY OUR TRENDING SERVICES WITH UPTO 50% OFF!</h2>
+                <p class="banner_para">
+                    <span class="banner_lines hide-mobile"></span>
+                    On any service you book
+                    <span class="banner_lines hide-mobile"></span>
+                </p>
+                <div class="banner_cta">BOOK A SERVICE</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="premium ">
+        <h1 class="premium_title">
+            Electrician Services
+            <span>Premium Services</span>
+        </h1>
+        <div class="premium_products">
+            <figure class="prev hide-mobile">
+                <img src="./static/left.png" alt="">
+            </figure>
+            <div class="container">
+                <div class="product">
+                    <img src="./static/mcb.png" alt="">
+                    <p>
+                        MCB & Fuse
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/socket.png" alt="">
+                    <p>
+                        Switch & Socket
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/wire.png" alt="">
+                    <p>
+                        Wiring
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/fridge_oven.png" alt="">
+                    <p>
+                        Appliances
+                        <span>Painting, Clock & Photoframe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/bulbs.png" alt="">
+                    <p>
+                        Chandelier
+                        <span>Holder, Hanger, Rod installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/door-bell.png" alt="">
+                    <p>
+                        Door Bell
+                        <span>Bed, Table, Rack & Cabinet</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/mcb.png" alt="">
+                    <p>
+                        MCB & Fuse
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/socket.png" alt="">
+                    <p>
+                        Switch & Socket
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/wire.png" alt="">
+                    <p>
+                        Wiring
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+            </div>
+            <figure class="next hide-mobile">
+                <img src="./static/right.png" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <section class="premium ">
+        <h1 class="premium_title">
+            Plumber Services
+            <span>Premium Services</span>
+        </h1>
+        <div class="premium_products">
+            <figure class="prev hide-mobile">
+                <img src="./static/left.png" alt="">
+            </figure>
+            <div class="container">
+                <div class="product">
+                    <img src="./static/sink.png" alt="">
+                    <p>
+                        Wash Basin & Sink
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/shower.png" alt="">
+                    <p>
+                        Bath Fittings
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/toilet_pump.png" alt="">
+                    <p>
+                        Blockage
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/drill.png" alt="">
+                    <p>
+                        Drill & Hole
+                        <span>Painting, Clock & Photoframe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/Minor_installations.png" alt="">
+                    <p>
+                        Minor Installations
+                        <span>Holder, Hanger, Rod installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/Tap.png" alt="">
+                    <p>
+                        Mixer, Top & Nozzle
+                        <span>Bed, Table, Rack & Cabinet</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/sink.png" alt="">
+                    <p>
+                        Wash Basin & Sink
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/shower.png" alt="">
+                    <p>
+                        Bath Fittings
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/toilet_pump.png" alt="">
+                    <p>
+                        Blockage
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+            </div>
+            <figure class="next hide-mobile">
+                <img src="./static/right.png" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <section class="premium ">
+        <h1 class="premium_title">
+            Carpenter Services
+            <span>Premium Services</span>
+        </h1>
+        <div class="premium_products">
+            <figure class="prev hide-mobile">
+                <img src="./static/left.png" alt="">
+            </figure>
+            <div class="container">
+                <div class="product">
+                    <img src="./static/bed.png" alt="">
+                    <p>
+                        Bed
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/curtains.png" alt="">
+                    <p>
+                        Curtain & Binds
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/door.png" alt="">
+                    <p>
+                        Door
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/drawer.png" alt="">
+                    <p>
+                        Drawer & Cupboard
+                        <span>Painting, Clock & Photoframe</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/Fitting___minor_installations.png" alt="">
+                    <p>
+                        Fittings & Installations
+                        <span>Holder, Hanger, Rod installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/Furniture_assembly.png" alt="">
+                    <p>
+                        Furniture Assembly
+                        <span>Bed, Table, Rack & Cabinet</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/bed.png" alt="">
+                    <p>
+                        Bed
+                        <span>Repairing & installation</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/curtains.png" alt="">
+                    <p>
+                        Curtain & Binds
+                        <span>Shower, Faucets & Holder installation & repair</span>
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="./static/door.png" alt="">
+                    <p>
+                        Door
+                        <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+                    </p>
+                </div>
+            </div>
+            <figure class="next hide-mobile">
+                <img src="./static/right.png" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <div class="banner_four hide-mobile">
+        <img src="./static/woman.png" alt="" class="banner_image">
+        <div class="banner_container">
+            <div class="banner_text">
+                <h2>Why people choose us</h2>
+                <ul>
+                    <li>Affordable Dates</li>
+                    <li>On time service</li>
+                    <li>Verified Professionals</li>
+                    <li>Excellent Service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_four_mobile hide-desktop">
+        <div class="banner_text">
+            <h2 class="banner_title">Why Choose Us?</h2>
+            <ul>
+                <li><img src="./static/30Dyas.png" alt="">30 days service guarantee</li>
+                <li><img src="./static/affordable.png" alt="">Affordable prices</li>
+                <li><img src="./static/ontime.png" alt="">On time service</li>
+                <li><img src="./static/verified.png" alt="">Verified Professionals</li>
+                <li><img src="./static/excellent.png" alt="">Excellent Service</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="testimonial  container-type-one">
+        <h2 class="testimonial_title">What our customers say</h2>
+        <div class="testimonial_container">
+            <div class="card">
+                <img src="./static/quote.png" alt="">
+                <p class="test">
+                    Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend
+                    augue volutpat hendrerit.
+                </p>
+                <p class="name">Ritu Kumar</p>
+            </div>
+            <div class="card">
+                <img src="./static/quote.png" alt="">
+                <p class="test">
+                    Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend
+                    augue volutpat hendrerit.
+                </p>
+                <p class="name">Ritu Kumar</p>
+            </div>
+            <div class="card">
+                <img src="./static/quote.png" alt="">
+                <p class="test">
+                    Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend
+                    augue volutpat hendrerit.
+                </p>
+                <p class="name">Ritu Kumar</p>
+            </div>
+            <div class="card">
+                <img src="./static/quote.png" alt="">
+                <p class="test">
+                    Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend
+                    augue volutpat hendrerit.
+                </p>
+                <p class="name">Ritu Kumar</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner_five hide-mobile">
+        <div class="banner_container">
+            <div class="banner_text">
+                <h2>Refer and or get link</h2>
+                <p>invite your friends</p>
+                <div class="input_field">
+                    <input type="text" placeholder="Enter your 10 digit mobile number">
+                    <button class="button">
+                        <img src="./static/Arrow 1.png" alt="">
+                    </button>
+                </div>
+                <div class="downloads">
+                    <img src="./static/google-play-badge 2.png" alt="">
+                    <img src="./static/apple store.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_six">
+        <figure>
+            <img src="./static/stamp.png" alt="">
+        </figure>
+        <h2>Hassle free services with OyeBusy</h2>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <p>RELATED SERVICES</p>
+            <p>Electrician | Plumber | Carpenter | Packers & Movers | Salon For Woman | Salon For Man | Electronic
+                Appliances | CCTV Installation & Repair | Ro- repair & service | house Painter | Pest Control | Kitchen
+                Cleaning | Bathroom Cleaning | Sofa Cleaning | Carpet Cleaning | Home Deep Cleaning
+            </p>
+            <p>TOP LOCATIONS</p>
+            <p>
+                Delhi | Gurgaon | Noida | Ghaziabad | Faridhabad | Greater Noida
+            </p>
+            <ul>
+                <li>About Us</li>
+                <li>Near me</li>
+                <li>Careers</li>
+                <li>Terms & conditions</li>
+                <li>Privacy Policy</li>
+                <li>Offers & giftcards</li>
+                <li>Contact Us</li>
+            </ul>
+            <div class="contact">
+                <div class="side_one">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Phone : +91 9990001089<br>
+                        Email : support@oyebusy.com
+                    </p>
+                </div>
+                <div class="side_two">
+                    <h3>Download Oyebusy App</h3>
+                    <a href=""><img src="./static/google-play-badge 2.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="socials">
+                <img src="./static/instagram.png" alt="">
+                <img src="./static/twitter.png" alt="">
+                <img src="./static/linkedin.png" alt="">
+                <img src="./static/facebook.png" alt="">
+                <img src="./static/youtube.png" alt="">
+                <img src="./static/pinterest.png" alt="">
+            </div>
+            <div class="copyright">© 2021 OyeBusy Technologies Pvt. Ltd.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
